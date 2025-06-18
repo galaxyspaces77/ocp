@@ -1,0 +1,8 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: local-storage
+  namespace: openshift-marketplace
+spec:
+  image: quay-manual.local:8443/operators/local-storage/redhat/redhat-operator-index:v4.17
+  sourceType: grpc
